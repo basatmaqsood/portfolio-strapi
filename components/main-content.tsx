@@ -33,7 +33,7 @@ export default function MainContent({ children, title, subtitle }: MainContentPr
   }
 
   return (
-    <motion.div className="space-y-12" initial="hidden" animate="visible" variants={containerVariants}>
+    <motion.div className="space-y-12 mt-4" initial="hidden" animate="visible" variants={containerVariants}>
       {(title || subtitle) && (
         <motion.div className="mb-8" variants={itemVariants}>
           {title && <h1 className="text-3xl font-bold mb-2 text-shadow">{title}</h1>}

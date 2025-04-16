@@ -13,10 +13,10 @@ export default async function Home() {
   return (
     <MainContent>
       <Projects />
-      <Tools />
-      <Testimonials />
+      {/* <Tools /> */}
+      {/* <Testimonials /> */}
       <BlogPosts />
-      <Faq />
+      {/* <Faq /> */}
       <Contact />
     </MainContent>
   )

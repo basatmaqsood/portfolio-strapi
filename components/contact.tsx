@@ -28,7 +28,7 @@ export default function Contact() {
 
   return (
     <motion.section
-      className="mb-16 relative overflow-hidden"
+      className="mb-16 relative"
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true, margin: "-100px" }}

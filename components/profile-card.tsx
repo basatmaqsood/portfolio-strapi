@@ -65,7 +65,7 @@ export default function ProfileCard({ profile, loading }: ProfileProps) {
           variants={itemVariants}
         >
           <Image
-            src="/placeholder.svg?height=128&width=128"
+            src="/dp.jpg"
             alt={profileData.Name}
             width={128}
             height={128}

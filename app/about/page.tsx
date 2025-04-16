@@ -17,12 +17,12 @@ export default async function AboutPage() {
 
   return (
     <MainContent title="About Me" subtitle="Learn more about my background and skills">
-      <div className="content-card rounded-xl p-8">
+      <div className="content-card rounded-xl p-8 mt-2">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
           <div className="relative aspect-square w-full max-w-md mx-auto">
             <div className="absolute inset-0 bg-gradient-to-br from-purple-600 to-violet-600 rounded-2xl opacity-20 blur-xl animate-pulse-slow"></div>
             <div className="relative h-full w-full overflow-hidden rounded-2xl border border-purple-500/20">
-              <Image src="/placeholder.svg?height=400&width=400" alt={profile.Name} fill className="object-cover" />
+              <Image src="/dp.jpg" alt={profile.Name} fill className="object-cover" />
             </div>
           </div>
 

@@ -71,8 +71,8 @@ export default function Navbar() {
       style={{ position: "fixed" }}
     >
       <motion.nav
-        className={`rounded-full backdrop-blur-md px-3 py-3 transition-all duration-300 flex items-center justify-center space-x-2 sm:space-x-4 ${
-          scrolled ? "bg-black/80 border border-gray-800/50 shadow-lg shadow-purple-900/10" : "bg-transparent"
+        className={`rounded-full backdrop-blur-md px-3 py-3 transition-all  duration-300 flex items-center justify-center space-x-2 sm:space-x-4 ${
+          scrolled ? "bg-black/80 border border-gray-800/50 shadow-lg shadow-purple-900/10" : "border border-white"
         }`}
         whileHover={{ scale: scrolled ? 1.02 : 1 }}
         transition={{ duration: 0.2 }}

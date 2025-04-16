@@ -38,6 +38,25 @@ export default function MainLayout({ children }: { children: React.ReactNode }) 
 
   return (
     <>
+          {/* <div className="absolute inset-0 grid grid-cols-12 gap-2 p-2 opacity-20">
+            {[...Array(144)].map((_, i) => (
+              <div
+                key={i}
+                className="border border-purple-500 rounded-sm transition-colors duration-1000 hover:border-purple-600"
+              />
+            ))}
+          </div> */}
+
+<div className="fixed inset-0 grid grid-cols-12 gap-2 p-2 opacity-20">
+        {[...Array(144)].map((_, i) => (
+          <div
+            key={i}
+            className="border border-purple-500/50 rounded-sm transition-colors duration-1000 hover:border-purple-500"
+          />
+        ))}
+      </div>
+      <div className="fixed top-1/4 -left-1/4 w-1/2 h-1/2 bg-gradient-to-r from-purple-500/30 to-transparent rounded-full blur-3xl animate-pulse"></div>
+      <div className="fixed bottom-1/4 -right-1/4 w-1/2 h-1/2 bg-gradient-to-l from-purple-500/30 to-transparent rounded-full blur-3xl animate-pulse"></div>
       <ScrollAnimations />
       <AnimatePresence mode="wait">
         {loading ? (
@@ -52,7 +71,7 @@ export default function MainLayout({ children }: { children: React.ReactNode }) 
             className="min-h-screen"
           >
             <Navbar />
-            <div className="container mx-auto px-4 py-20">
+            <div className="container mx-auto mt-4 md:mt-0 px-4 py-20">
               <div className="flex flex-col lg:flex-row gap-8">
                 <div className="lg:w-1/4">
                   <div className="lg:sticky lg:top-24">

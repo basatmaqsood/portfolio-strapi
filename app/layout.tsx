@@ -33,12 +33,14 @@ export default function RootLayout({
       <body
         className={`${poppins.variable} font-poppins bg-black text-white min-h-screen`}
       >
+      {/* Grid Background */}
+
+        <GrainOverlay />
         {/* <AnimatedBackground /> */}
         {/* <CustomCursor />
          */}
 
         <ScrollProgress />
-        <GrainOverlay />
         {/* <PageTransition> */}
           <MainLayout>{children}</MainLayout>
         {/* </PageTransition> */}
