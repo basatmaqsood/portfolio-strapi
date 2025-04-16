@@ -8,16 +8,6 @@
   --purple-light: #a78bfa;
   --purple-dark: #6d28d9;
 }
-html {
-  --cursor-color: #333
-}
-
-html.dark-mode {
-  --cursor-color: #fff
-}
-.custom-cursor {
-  transition: background-color 0.1s ease;
-}
 
 body {
   font-family: var(--font-poppins), sans-serif;
@@ -26,7 +16,8 @@ body {
   background-repeat: repeat;
   background-blend-mode: overlay;
   background-size: 200px;
-  cursor: none;
+  transition: all 0.3s ease-out;
+
 }
 
 /* Update cursor styles for smoother movement */
