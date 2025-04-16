@@ -64,7 +64,7 @@ export default function Navbar() {
 
   return (
     <motion.header
-      className="fixed top-0 left-0 right-0 z-[1000] flex justify-center items-center py-5 transition-all duration-300"
+      className="fixed top-0 left-0 right-0 z-[1000] flex justify-center items-center py-3 transition-all duration-300"
       initial="hidden"
       animate="visible"
       variants={navbarVariants}
