@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+*{
+  transition: all 0.3s ease;
+}
+
 :root {
   --purple-primary: #8b5cf6;
   --purple-secondary: #7c3aed;
@@ -16,7 +20,6 @@ body {
   background-repeat: repeat;
   background-blend-mode: overlay;
   background-size: 200px;
-  transition: all 0.3s ease-out;
 
 }
 
